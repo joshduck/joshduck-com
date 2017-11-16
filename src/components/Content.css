@@ -1,0 +1,57 @@
+.Content {
+  color: #33434d;
+  font-family: Georgia, Cambria, serif;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.Content p {
+  margin-top: 0;
+}
+
+.Content ul,
+.Content ol {
+  padding-left: 1.5em;
+  list-style-position: outside;
+  margin-top: 0;
+}
+
+.Content h1,
+.Content h2,
+.Content h3,
+.Content h4,
+.Content h5,
+.Content h6 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  color: #45555e;
+  line-height: 1.3em;
+  margin-top: 0;
+}
+
+.Content h1 {
+  font-size: 2.2em;
+}
+
+.Content a {
+  text-decoration: none;
+  color: #035e7b;
+}
+
+.Content a:hover {
+  text-decoration: underline;
+}
+
+.Content a:visited {
+  color: #06799f;
+}
+
+.Content h1 > a,
+.Content h1 > a:visited,
+.Content h2 > a,
+.Content h2 > a:visited,
+.Content h3 > a,
+.Content h3 > a:visited {
+  color: inherit;
+}

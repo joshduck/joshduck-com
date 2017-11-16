@@ -1,0 +1,31 @@
+.Header {
+  border-bottom: 3px dotted #f0f0f0;
+  margin-bottom: 1rem;
+}
+
+.Header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 950px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .Header-content {
+    display: block;
+  }
+}
+
+.Header-logo,
+.Header-logo:visited,
+.Header-logo:hover {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ff5722;
+  white-space: nowrap;
+}
