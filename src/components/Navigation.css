@@ -31,7 +31,7 @@
   color: inherit;
 }
 
-.Navigation .Navigation-active a {
+.Navigation a.Navigation-active {
   /* Outline to match background */
   text-shadow: -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff,
     1px 1px 0 #fff;
@@ -47,6 +47,6 @@
   color: #fff;
 }
 
-.Navigation .Navigation-active a span {
+.Navigation a.Navigation-active span {
   border-color: #45555e;
 }

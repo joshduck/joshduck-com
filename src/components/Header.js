@@ -1,14 +1,15 @@
 import React from "react";
 import Navigation from "./Navigation";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
-export default ({ showPersonalInfo, page }) => (
+export default ({ showPersonalInfo }) => (
   <header className="Header">
     <div className="Header-content">
-      <a href="/" className="Header-logo">
+      <Link to="/" className="Header-logo">
         Josh Duck
-      </a>
-      <Navigation page={page} className="Header-navigation" />
+      </Link>
+      <Navigation className="Header-navigation" />
     </div>
   </header>
 );

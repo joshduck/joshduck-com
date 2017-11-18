@@ -1,26 +1,26 @@
 import React, { Component } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+
 import "./App.css";
 import Header from "./components/Header";
-import Content from "./components/Content";
+import Resume from "./Resume";
+import BlogHome from "./BlogHome";
+import Projects from "./Projects";
+import Home from "./Home";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header page="blog" />
-        <Content>
-          <h1>Hello</h1>
-          <h2>Hello</h2>
-          <p>Hello</p>
-          <p>Hello</p>
-          <ul>
-            <li>One</li>
-            <li>Two</li>
-          </ul>
-          <p>
-            <a href="#">Hello</a>
-          </p>
-        </Content>
+        <BrowserRouter>
+          <div>
+            <Header />
+            <Route path="/" exact component={Home} />
+            <Route path="/resume.html" component={Resume} />
+            <Route path="/projects.html" component={Projects} />
+            <Route path="/blog/" component={BlogHome} />
+          </div>
+        </BrowserRouter>
       </div>
     );
   }

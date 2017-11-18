@@ -1,19 +1,20 @@
 import React from "react";
 import "./Navigation.css";
+import { NavLink } from "react-router-dom";
 
-const links = [
-  { id: "resume", href: "/resume.html", label: "Resume" },
-  { id: "blog", href: "/blog.html", label: "Blog" },
-  { id: "project", href: "/project.html", label: "Projects" }
-];
+const links = {
+  "/resume.html": "Resume",
+  "/blog/": "Blog",
+  "/projects.html": "Projects"
+};
 
-export default ({ page, className }) => (
+export default ({ className }) => (
   <ul className={"Navigation Layout-content " + className}>
-    {links.map((link, i) => (
-      <li key={i} className={page === link.id ? "Navigation-active" : ""}>
-        <a href={link.href}>
-          <span>{link.label}</span>
-        </a>
+    {Object.keys(links).map((href, i) => (
+      <li key={i}>
+        <NavLink to={href} activeClassName="Navigation-active">
+          <span>{links[href]}</span>
+        </NavLink>
       </li>
     ))}
   </ul>
