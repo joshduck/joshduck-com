@@ -3,10 +3,10 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 import "./App.css";
 import Header from "./components/Header";
-import Resume from "./Resume";
-import BlogHome from "./BlogHome";
-import Projects from "./Projects";
-import Home from "./Home";
+import Resume from "./pages/Resume";
+import BlogHome from "./pages/BlogHome";
+import Projects from "./pages/Projects";
+import Home from "./pages/Home";
 
 class App extends Component {
   render() {

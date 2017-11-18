@@ -1,19 +1,30 @@
 import React from "react";
+import ResponsiveSection from "./ResponsiveSection";
+import "./ResumeItem.css";
 
-export default ({ job }) => (
-  <section className="ResumeItem">
-    <div className="ResumeItem-summary">
-      {job.company && <h3>{job.company}</h3>}
-      {job.role && <h4>{job.role}</h4>}
-      {job.start && (
-        <h4>
-          {job.start} &mdash; {job.end}
-        </h4>
-      )}
-    </div>
-    <div className="ResumeItem-details">
-      <p>{job.summary}</p>
-      <ul>{job.points.map((item, i) => <li key={i}>{item}</li>)}</ul>
-    </div>
-  </section>
-);
+export default ({ item }) => {
+  const { company, role, start, end, summary, points } = item;
+  return (
+    <ResponsiveSection
+      className="ResumeItem"
+      withDivider
+      header={
+        <div>
+          {company && <h3 className="ResumeItem-company">{company}</h3>}
+          {role && <div className="ResumeItem-role">{role}</div>}
+          {start && (
+            <div className="ResumeItem-period">
+              {start} &mdash; {end}
+            </div>
+          )}
+        </div>
+      }
+      body={
+        <div>
+          <p>{summary}</p>
+          <ul>{points.map((item, i) => <li key={i}>{item}</li>)}</ul>
+        </div>
+      }
+    />
+  );
+};

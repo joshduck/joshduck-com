@@ -1,0 +1,16 @@
+.ResumeItem .ResumeItem-company {
+  margin-bottom: 0;
+}
+
+.ResumeItem-period,
+.ResumeItem-role {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #6f838f;
+  font-weight: 300;
+}
+
+.ResumeItem p:last-child,
+.ResumeItem ul:last-child,
+.ResumeItem ol:last-child {
+  margin-bottom: 0;
+}

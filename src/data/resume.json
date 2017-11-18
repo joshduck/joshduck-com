@@ -1,0 +1,167 @@
+{
+  "work": [
+    {
+      "start": "Jan 2016",
+      "end": "Present",
+      "role": "Team Lead",
+      "company": "ABC",
+      "summary": "I manage the development team that builds ABC.net.au",
+      "points": [
+        "Worked with product and delivery teams to coordinate maintenance of existing ABC web products.",
+        "Helped design a greenfield Node and React application framework for new web products."
+      ]
+    },
+    {
+      "start": "Aug 2013",
+      "end": "Dec 2016",
+      "role": "Engineering Manager",
+      "company": "Facebook",
+      "summary":
+        "I managed multiple teams that built and open-sourced frontend infrastructure.",
+      "points": [
+        "Managed the team that open-sourced Relay, a GraphQL framework that powers Facebook's desktop site and native apps.",
+        "Founded a team to improve JavaScript performance on Facebook's web sites.",
+        "Initiated regular cross-org meetings to improve communication between infrastructure and product teams.",
+        "Recruited, mentored and coached team members.",
+        "Ran company-wide monthly tech talks for front end engineers.",
+        "Presented at meetups and Web Directions 2016 on JavaScript performance.",
+        "Conducted 200 technical interviews, trained new interviewers, and designed interview questions for Facebook's frontend recruiting team."
+      ]
+    },
+    {
+      "start": "May 2011",
+      "end": "Aug 2013",
+      "role": "UI Engineer",
+      "summary":
+        "I built common frontend infrastructure for Facebook and led the frontend development of Graph Search.",
+      "points": [
+        "Contributed to open source and internal infrastructure including React, Relay, and Draft.js.",
+        "Tech led the development of Facebook's search input and result pages for the launch of Graph Search.",
+        "Collaborated with design, UX, and project management to refine the product vision and user experience of Graph Search.",
+        "Rebuilt primary site navigation and profile navigation for launch of Timeline.",
+        "Taught front end training sessions and mentored new team members."
+      ]
+    },
+    {
+      "start": "Jul 2010",
+      "end": "Apr 2011",
+      "role": "Senior Programmer",
+      "company": "Brightlabs",
+      "summary": "Built internal and client websites.",
+      "points": [
+        "Developed an in-house billing system with Jira, Plesk and Zendesk integration.",
+        "Built a PHP web app for virtual mobile network that featured customer management, account creation flows and integration with custom billing systems."
+      ]
+    },
+    {
+      "start": "Jan 2010",
+      "end": "Apr 2010",
+      "role": "Senior Programmer (Contract)",
+      "company": "IPC Media",
+      "summary":
+        "Maintained sites for Marie Claire, InStyle, Wedding and Look.",
+      "points": [
+        "Achieved 10x speedup in the company’s picture gallery module by optimising caching and other code improvements."
+      ]
+    },
+    {
+      "start": "Oct 2009",
+      "end": "Dec 2009",
+      "role": "Senior Programmer (Contract)",
+      "company": "AKQA",
+      "summary":
+        "Developed 221b.sh, an interactive game promoting the film Sherlock Holmes.",
+      "points": [
+        "Redesigned database schema to enable rapid iteration on game rules.",
+        "Developed CakePHP to Flash integration via AMF interface.",
+        "Implemented user authentication and notifications via Facebook Connect."
+      ]
+    },
+    {
+      "start": "Apr 2009",
+      "end": "Jul 2009",
+      "role": "Senior Programmer (Contract)",
+      "company": "Symbian Foundation",
+      "summary":
+        "Helped ship Symbian Developer site, which supported developers on the world’s most widely used mobile OS.",
+      "points": [
+        "Added authentication to vBulletin and Bugzilla via XML-RPC.",
+        "Developed CSS, HTML and PHP for user-facing website."
+      ]
+    },
+    {
+      "start": "Feb 2009",
+      "end": "Apr 2009",
+      "role": "Web Developer (Contract)",
+      "company": "Nitro",
+      "summary": "Prototyped and built the official website for The Beatles.",
+      "points": [
+        "Developed a custom CMS system and database design to support graph-based navigation.",
+        "Created JavaScript framework for async page loading and seamless HTML fallback.",
+        "Implemented a Flash based music player with 3D cover flow interface."
+      ]
+    },
+    {
+      "start": "Nov 2006",
+      "end": "Dec 2008",
+      "role": "Senior Programmer",
+      "company": "DoubleClick Industries",
+      "summary":
+        "Maintained and developed FileFactory, an Alexa top 500 website.",
+      "points": [
+        "Maintained and relaunched main FileFactory front end.",
+        "Developed Facebook application for photo, audio, and file sharing.",
+        "Designed and shipped slideshow sharing site with Flash-based editor.",
+        "Created drag and drop file manager using jQuery and AJAX.",
+        "Created .NET application which handled 50% of uploads to the site."
+      ]
+    },
+    {
+      "start": "Jun 2004",
+      "end": "Oct 2006",
+      "role": "Lead Web Developer",
+      "company": "Mosaicom / Bugal",
+      "summary": "Lead developer of social networking site Babbello.",
+      "points": [
+        "Recruited and led local and remote development teams.",
+        "Designed custom MVC framework using PHP, MySQL and Memcached.",
+        "Integrated third-party avatar chat room, webmail and an IM client.",
+        "Launched features including profiles, photo albums, blogging, friend feed, forums, post via SMS, micropayments, ads delivery, Flash games arcade."
+      ]
+    },
+    {
+      "summary":
+        "Maintained multiple websites for mobile content (ringtone) brands.",
+      "points": [
+        "Shipped updated designs to multiple content sites.",
+        "Grew loyalty club to 50,000 active members.",
+        "Designed, sent and tracked interaction with monthly email newsletters."
+      ]
+    },
+    {
+      "start": "Dec 2003",
+      "end": "May 2004",
+      "role": "Programmer",
+      "company": "Griffith University",
+      "summary": "Built Stanwell Energy’s Stanwell Community website and CMS.",
+      "points": [
+        "Developed a proprietary CMS using PHP and MySQL.",
+        "Helped build Flash and HTML frontends."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "company": "Griffith University",
+      "role": "Bachelor of Multimedia",
+      "start": "2001",
+      "end": "2003",
+      "summary":
+        "Bachelor of Multimedia, majoring in Interactive Entertainment and Games Programming.",
+      "points": [
+        "Awarded Multimedia Studies Medal for earning the highest GPA in graduating class.",
+        "Recipient of School of Computing and Information Technology Multimedia Award."
+      ]
+    }
+  ]
+}

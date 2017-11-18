@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Page from "./components/Page";
+import Page from "../components/Page";
 
-export default class Resume extends Component {
+export default class BlogHome extends Component {
   render() {
     return (
-      <Page>
+      <Page title="Blog">
         <h1>Hello</h1>
       </Page>
     );

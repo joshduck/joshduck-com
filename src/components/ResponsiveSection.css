@@ -1,0 +1,30 @@
+.ResponsiveSection {
+  page-break-inside: avoid;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ResponsiveSection-header {
+  flex: 0 0 12em;
+  margin: 0 1em 0 0;
+  padding: 0 1em 0 0;
+}
+
+.ResponsiveSection-withDivider .ResponsiveSection-header {
+  border-right: 1px solid #bfc6c9;
+}
+
+@media only screen and (max-width: 600px) {
+  .ResponsiveSection {
+    display: block;
+  }
+
+  .ResponsiveSection-header {
+    margin: 0 0 1em 0;
+  }
+
+  .ResponsiveSection-withDivider .ResponsiveSection-header {
+    border: none;
+  }
+}
