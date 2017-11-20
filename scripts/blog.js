@@ -2,59 +2,35 @@ const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
 const markdown = require("markdown").markdown;
+const dateformat = require("dateformat");
+const parseContent = require("../src/utils/parseContent");
 
-const DOCUMENT_PATTERN = /^([\s\S]*?)\n\n([\s\S]*)$/;
-const METADATA_PATTERN = /(.*?):\s*(.*)/;
-const INTRO_TOKEN = "<!--more-->";
-const INTRO_PATTERN = /^([\s\S]{120,}?)\n/;
+const PUBLIC_PATH = path.join(__dirname, "../public/");
+const BLOG_PATTERN = path.join(PUBLIC_PATH, "**/*.md");
 
-const readContent = path => {
-  const content = fs.readFileSync(path).toString();
-  const parts = content.match(DOCUMENT_PATTERN);
+const getContentPath = file =>
+  path.relative(PUBLIC_PATH, file).replace(/\\/g, "/");
 
-  if (parts) {
-    const headers = getHeaders(parts[1]);
-    const body = parts[2];
-    const intro = getIntro(parts[2]);
-
-    return { path, headers, intro, body };
-  }
+const getPermalinkPath = (file, date) => {
+  const slug = path.basename(file).replace(/\..*/, "");
+  const df = dateformat(date, "yyyy/mm/dd");
+  return `${df}/${slug}/`;
 };
 
-const getIntro = text => {
-  const split = text.split(INTRO_TOKEN);
-  if (split.length > 1) {
-    return split[0];
-  }
+glob(BLOG_PATTERN, {}, (err, files) => {
+  const manifest = files.map(file => {
+    const raw = fs.readFileSync(file).toString();
+    const content = parseContent(raw);
+    const date = new Date(content.headers.date);
 
-  const match = text.match(INTRO_PATTERN);
-  if (match) {
-    return match[1];
-  }
-
-  return text;
-};
-
-const getHeaders = text => {
-  const out = {};
-  text.split("\n").forEach(line => {
-    const match = line.trim().match(METADATA_PATTERN);
-    if (match) {
-      out[match[1].trim()] = match[2].trim();
-    }
+    return {
+      permalink: getPermalinkPath(file, date),
+      title: content.headers.title,
+      date: date.toISOString(),
+      markdown: getContentPath(file),
+      intro: content.intro
+    };
   });
-  return out;
-};
 
-const pattern = path.join(__dirname, "../public/**/*.md");
-glob(pattern, {}, (err, files) => {
-  files.forEach(file => {
-    const content = readContent(file);
-    if (content) {
-      console.log(content.headers);
-      console.log(content.intro);
-      console.log(markdown.toHTML(content.intro));
-      console.log();
-    }
-  });
+  console.log(JSON.stringify(manifest, null, 2));
 });
