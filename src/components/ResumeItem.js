@@ -1,5 +1,6 @@
 import React from "react";
 import ResponsiveSection from "./ResponsiveSection";
+import Text from "./Text";
 import "./ResumeItem.css";
 
 export default ({ item }) => {
@@ -11,11 +12,15 @@ export default ({ item }) => {
       header={
         <div>
           {company && <h3 className="ResumeItem-company">{company}</h3>}
-          {role && <div className="ResumeItem-role">{role}</div>}
+          {role && (
+            <Text display="metadata" block>
+              {role}
+            </Text>
+          )}
           {start && (
-            <div className="ResumeItem-period">
+            <Text display="metadata" block>
               {start} &mdash; {end}
-            </div>
+            </Text>
           )}
         </div>
       }
