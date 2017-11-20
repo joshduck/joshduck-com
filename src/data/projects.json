@@ -1,0 +1,84 @@
+{
+  "projects": [
+    {
+      "name": "Periodic Table",
+      "description":
+        "A periodic table of **HTML5 elements**. A cheesy little joke that went viral. I still stumble across it in the [weirdest places](http://bradfrost.com/blog/post/atomic-web-design/). The page was so popular that I was [sued for copyright infringement](https://www.techdirt.com/articles/20150423/08252130770/designer-still-pursuing-bogus-takedown-periodic-table-html-elements-has-no-idea-how-copyright-works.shtml). The original is no longer available but can visit [Mike Riethmuller's clone](https://madebymike.com.au/html5-periodic-table/).",
+      "url":
+        "https://www.sitepoint.com/the-periodic-table-of-the-html-5-elements/"
+    },
+    {
+      "name": "PixelStir",
+      "description":
+        "Can HTML5 be used to create a Lightroom-like upload experience? PixelStir was a hackathon project that was a lot of fun. It used canvas to provide filtering, cropping, resizing and Facebook upload functionality.",
+      "url": "http://www.pixelstir.com/"
+    },
+    {
+      "name": "Animal Soundboard",
+      "description":
+        "A project to create a simple children's game using WinJS. Quite possibly the first React-powered app on the Windows Store",
+      "url": "https://github.com/joshduck/soundboard"
+    },
+    {
+      "name": "Stopwatch Widget",
+      "description":
+        "This is a simple stopwatch for Windows 7 and Windows Vista. Built using HTML, JS and CSS.",
+      "url": "https://github.com/joshduck/stopwatch/"
+    }
+  ],
+  "github": [
+    {
+      "name": "React Bundle Preloading",
+      "description":
+        "This project makes it possible to determine which Webpack bundles should be preloaded in the client. Dynamic imports allow us to split our application up into smaller chunks so that we spend less time loading and preparing JavaScript in the browser. But because bundles are loaded only when used, we may end up waiting for several round trips as we load JavaScript, execute some code, and then discover a new dynamic import that requires even more JavaScript to be loaded.",
+      "url": "https://github.com/joshduck/webpack-dynamic-import"
+    },
+    {
+      "name": "Injector.js",
+      "description":
+        "Javascript class to allow sane handling of document.write",
+      "url": "https://github.com/joshduck/Injector.js"
+    }
+  ],
+  "speaking": [
+    {
+      "name":
+        "Exploring Static Types: Writing Typesafe Code that Feels Like Real JavaScript",
+      "venue": "Web Directions Summit, 2017",
+      "description":
+        "​For twenty years JavaScript's dynamic typing has given us an easy-to-use scripting language. But now Flow and TypeScript are changing the foundations of the language. Far from turning our code into an object oriented mess, static typing gives us JavaScript code that's cleaner, simpler and more predictable.",
+      "url": "http://www.webdirections.org/wds/speakers/josh-duck.html"
+    },
+    {
+      "name": "Designing a Culture that Fosters Growth",
+      "venue": "Web Directions Leaders, 2017",
+      "description":
+        "​Many companies say they want the best developers. But they don’t back that up with their actions. Facebook has invested heavily in designing a culture that grows developers over many years. In this session, Josh, now back in Australia managing a team at the ABC, shares lessons he learned working for Facebook, a company renowned for their engineering prowess, producing such widely used open source technologies as React and GraphQL despite growing its engineering head count at an almost unimaginable rate over the last decade.",
+      "url": "https://www.webdirections.org/leaders/#speakers"
+    },
+    {
+      "name": "Rediscovering the Server",
+      "venue": "Web Directions Code, 2016",
+      "description":
+        "React makes it easy to build beautiful and responsive JavaScript applications. But moving rendering from server to client reveals new and unique performance challenges. Preloading data, minimizing round trips, and reducing JS overhead are some of the problems JavaScript developers face. Server and client execution are fundamentally different; each has distinct strengths and weaknesses. Building fast applications means designing systems that combine the strengths of both of these environments. We'll look at how Facebook is doing this with abstractions like GraphQL and Relay, the specific problems that each library solves, and how we can apply the same design principles to other performance problems.      ",
+      "url": "http://webdirections.org/code16/speakers/josh-duck.html",
+      "youtube": "https://www.youtube.com/watch?v=b875VAC6r-w"
+    },
+    {
+      "name": "Frontend At Scale: Designing Infra For Big Teams",
+      "venue": "Yow! 2016",
+      "description":
+        "​The frontend ecosystem is a rich and complex environment. Developing high quality web applications means understanding browser quirks, web performance, testing strategies, and API design. Consistently getting all of this right is difficult in an organization where hundreds of engineers are collaborating on the same codebase,\n\nIn this talk we look at the solutions Facebook has developed for data fetching, code delivery, performance profiling, and testing React applications. And we review the methodologies Facebook uses when designing new infrastructure like Relay and GraphQL.",
+      "url": "http://www.webdirections.org/wds/speakers/josh-duck.html",
+      "youtube": "https://www.youtube.com/watch?v=LrfSSAET6iY"
+    },
+    {
+      "name": "GraphQL + Relay",
+      "venue": "BrisJS",
+      "description":
+        "​The frontend ecosystem is a rich and complex environment. Developing high quality web applications means understanding browser quirks, web performance, testing strategies, and API design. Consistently getting all of this right is difficult in an organization where hundreds of engineers are collaborating on the same codebase,\n\nIn this talk we look at the solutions Facebook has developed for data fetching, code delivery, performance profiling, and testing React applications. And we review the methodologies Facebook uses when designing new infrastructure like Relay and GraphQL.",
+      "url": "http://www.webdirections.org/wds/speakers/josh-duck.html",
+      "youtube": "https://www.youtube.com/watch?v=HcnHuy3G1xY"
+    }
+  ]
+}
