@@ -11,7 +11,7 @@ I was already redirecting 404's to a custom PHP page, so I added a check which r
 
 The actual script I use is specific to the code I use for my own site, but I've supplied a generic version of the script below.
 
-<pre lang="php">
+```php
 <?php
 $request_path = $_SERVER['REQUEST_URI'];
 
@@ -35,4 +35,4 @@ foreach (glob('/*.html') as $file) {
 		$suggestions[$url] = $title;	
 	}
 }
-</pre>
+```

@@ -7,7 +7,8 @@ Every time I'm working on CRUD applications it seems like a lot of boilerplate c
 
 The function takes a string with string fragments marked up inline as its main argument. It then formats the output based on the count passed into the function.<!--more-->
 
-<pre lang="php">function pluralize($text, $count = 0) {
+```php
+function pluralize($text, $count = 0) {
 	$regex = '/\[(.*?)\]/';
 	$divider = '|';
 
@@ -50,9 +51,13 @@ The function takes a string with string fragments marked up inline as its main a
 	$text = str_replace('%d', number_format($count), $text);
 
 	return $text;
-}</pre>
+}
+```
+
 The tests show example usage.
-<pre lang="php">$input = "There [are no pages|is 1 page|are %d pages]";
+
+```php
+$input = "There [are no pages|is 1 page|are %d pages]";
 assert(pluralize($input, 0) == 'There are no pages');
 assert(pluralize($input, -1) == 'There are no pages');
 assert(pluralize($input, 1) == 'There is 1 page');
@@ -63,5 +68,7 @@ assert(pluralize($input, array(1, 2, 3)) == 'There are 3 pages');
 
 $input = "1 page|%d pages";
 assert(pluralize($input, 0) == '0 pages');
-assert(pluralize($input, 1) == '1 page');</pre>
+assert(pluralize($input, 1) == '1 page');
+```
+
 I am releasing this into the public domain so feel free to copy and redistribute the code.

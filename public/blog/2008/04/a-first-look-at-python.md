@@ -24,10 +24,14 @@ The number one tool for making Python easy for beginners would have to be the in
 Python's use of white space seems to be a big issue amongst those that are not familiar with the language. It was one of the objections that I faced when proposing it at work. It tends to put Python in the "weird language" basket, which is unfortunate. After using the language I'd say that the white space issue is largely irrelevant.
 
 It does have some negative effects. It means you'll have to watch out for tab/space issues, but a good IDE should do that for you. It also make refactoring a little bit more difficult; I like to sometimes comment out a conditional statement, but that is not possible in Python. Sometimes I also like to indent my code for readability, for example if I'm printing out HTML I'll indent some child elements to indicate that they are related to previous lines. Again, that's not possible. The biggest issue I see is that there is nothing stopping you from accidentally breaking the flow of your code. If you took a Python code file and removed the whitespace you can loose meaning:
-<pre lang="python">for item in list:
+
+```python
+for item in list:
 if item.available:
 item.update()
-item.check_stock()</pre>
+item.check_stock()
+
+```
 It's impossible to tell where the statements should be. Are we calling _check_stock _on every item, or just the available ones? Sure, this is contrived, but I can see something like this happening.
 
 The advantages of the white space convention become very obvious very quickly. Python code is very compact. Not "what-the-hell-is-this-Perl-code-doing" compact, but actual readable compact non-ugly code. I've heard some people describe it as "prose". That is going a bit far, but it is very neat and easy to read.
@@ -37,14 +41,17 @@ The advantages of the white space convention become very obvious very quickly. P
 Python makes working with data sets incredibly easy. It has made me realise how much of my programming is actually just munging sets. Something I'd envisage as the driving part of a module can be converted from a nest of loops and conditional statements into a single line.
 
 Python list comprehension is the magic that makes this happen. What makes it even better is that the code is just as readable, perhaps even more so, than the verbose multi-line version. Python's syntax makes list invocations feel like a natural extension of for loops, meaning it is a great way to get programmers stuck in the imperative mindset on board.
-<pre lang="python">#Hmmm
+
+```python
+#Hmmm
 new_list = []
 for item in old_list:
     if item % 2 == 0:
     new_list.append(item * 2)
 
 #Yay, list comprehensions sort it all out
-new_list = [item * 2 for item in old_list if item % 2 == 0]</pre>
+new_list = [item * 2 for item in old_list if item % 2 == 0]
+```
 I've used map and filter functions to do the same thing in the past, but the lambda functions feel like they are out of place when transforming a list.
 
 ## Syntactic Sugar
@@ -52,15 +59,24 @@ I've used map and filter functions to do the same thing in the past, but the lam
 People love to repeatedly trot out one or two new features in the blog posts they write when they've just discovered a language. I'm no different. However I usually end up look at these contrived examples with a skeptical "but how often do you really use that?" So I'll do you a favour and share some features that will become second nature to you in Python.
 
 Tuple (and list) unpacking is a really neat feature. It makes a lot of code very concise. In this example the _range_ function returns a list of [0, 1, 2]. The values are unpacked and assigned to the three variables a, b and c.
-<pre lang="python">a, b, c = range(3)</pre>
+
+```python
+a, b, c = range(3)
+```
 This gives you the cool feature of multiple return values in a way that fits into the language and doesn't feel bolted on. Even better, it does it without needing to implement some one-off syntax to achieve it. You can use the same unpacking feature anywhere in your code. And yes, you will use it.
-<pre lang="python">data = [(1, 3), (3, 6), (4, 7)]
+
+```python
+data = [(1, 3), (3, 6), (4, 7)]
 print [x + y for x, y in data]
-#x and y are automatically unpacked</pre>
+#x and y are automatically unpacked
+```
 Another neat feature is the way Python treats everything as an object. This means the following code is perfectly valid.
-<pre lang="python">"!" * 5
+
+```python
+"!" * 5
 "Hello world".split()
-", ".join(values)</pre>
+", ".join(values)
+```
 Note that join works on the string variable, not a list as you may expect. This is not as widely used as the tuple unpacking, but does have it's place with string munging.
 
 ## Modules

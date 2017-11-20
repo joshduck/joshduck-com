@@ -1,5 +1,5 @@
 .Text-metadata,
-.Text-metadata a {
+.Text-metadata a:link {
   font-family: "Open Sans Condensed", sans-serif;
   color: #6f838f;
   font-weight: 300;

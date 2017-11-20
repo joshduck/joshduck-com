@@ -54,20 +54,15 @@ overflow: auto;
 </tr>
 </tbody>
 </table>
-<button id="example-toggle">Set table-layout to fixed</button>
-<script type="text/javascript">// <![CDATA[
-(function(){
+<button id="example-toggle" onclick="
 	var toggle = document.getElementById('example-toggle');
 	var table = document.getElementById('example-table');
-	var layout = 'auto';
-	toggle.onclick = function() {
-		toggle.innerHTML = 'Set table-layout to ' + layout;
-		layout = layout == 'auto' ? 'fixed' : 'auto';
-		table.style.tableLayout = layout;
-	}
-})();
-// ]]></script>
+	var layout = table.style.tableLayout == 'fixed' ? 'auto' : 'fixed';
+	toggle.innerHTML = 'Set table-layout to ' + layout;
+	table.style.tableLayout = layout;"
+>Set table-layout to fixed</button>
 
+ 
 On a related node, you'll notice that `overflow: hidden` has no effect on table cells. You'll have to wrap the cell contents in a container element if you want to crop it.
 
 This simple CSS property tends to go a unnoticed, but when you need it you'll definitely be thankful it's there.

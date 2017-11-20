@@ -5,7 +5,8 @@ categories: javascript, programming, uncategorized
 
 I was playing with Mootools' Class implementation today. It has a few nice features like mixins, easy inheritance and sane parent method calling. I did run into issues combining mixins (through the _Implements_ keyword) with parent method calling. The following code fails with the message: **The method "setOptions" has no parent.**<!--more-->
 
-<pre lang="javascript">var Car = new Class({
+```javascript
+var Car = new Class({
 	Extends: Vehicle,
 	Implements: [Options],
 
@@ -20,15 +21,23 @@ I was playing with Mootools' Class implementation today. It has a few nice featu
 			this.parent(options);
 		}
 	}
-});</pre>
+});
+```
+
 Apparently mixin methods like _setOptions_ don't act like inherited functions in Mootools' class implementation. The obvious fix is to make the class inherit from the mixin directly.
-<pre lang="javascript">var Car = new Class({
+
+```javascript
+var Car = new Class({
 	Extends: Options,
 
 	// Code omitted
-}</pre>
+}
+```
+
 This works, but we've lost the ability to create a sane object hierarchy. Thankfully the _Options_ variable I added to the _Implements_ array is just a reference to the class used to implement the mixin. So it is possible to call the parent method manually, just like I would without Mootool's magic _this.parent_ method.
-<pre lang="javascript">var Car = new Class({
+
+```javascript
+var Car = new Class({
 
 	// Code omitted
 
@@ -39,7 +48,9 @@ This works, but we've lost the ability to create a sane object hierarchy. Thank
 			Options.prototype.setOptions.call(this, options);
 		}
 	}
-}</pre>
+}
+```
+
 This works exactly like I hoped. The same approach would obviously work for other mixins like _Events _ and _Chain_.
 
 As a side note, it's worth mentioning that _Options.prototype.setOptions_ is actually pointing to a wrapper method which does a bit of Mootools-specific magic and validation; like ensuring the function is not protected. Fortunately the wrapper is written in a sane enough way that calling it from another object like this works OK.

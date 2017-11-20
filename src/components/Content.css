@@ -45,6 +45,7 @@
 
 .Content a {
   text-decoration: none;
+  text-decoration-skip: ink;
   color: #035e7b;
 }
 
@@ -63,6 +64,13 @@
 .Content h3 > a,
 .Content h3 > a:visited {
   color: inherit;
+}
+
+.Content blockquote {
+  border-left: 3px dotted #f0f0f0;
+  font-style: italic;
+  margin-left: 0;
+  padding-left: 1em;
 }
 
 .Content img {

@@ -25,8 +25,11 @@ A simple persistent XSS session hijack attack might take the following form.
 
 *   You accept user input into a comment field. This is output straight to the page with no filtering.
 *   Malicious user Alice sends the following comment
-<pre lang="html">Great Work!
-<script>document.write('![](http://malicious-site.com/capture/)');</script></pre>
+
+```html
+Great Work!
+<script>document.write('![](http://malicious-site.com/capture/)');</script>
+```
 
 *   This is accepted by your site and pasted into the comments.
 *   One of your members, Bob, visits the comment page while logged in.
@@ -53,9 +56,15 @@ What we need is a function that will ensure our data is never interpreted as HTM
 
 **Note:** make sure you quote all HTML attributes, especially if you are using (escaped) user input in them.
 
-<pre lang="php">![<?php echo htmlentities($userTitle);?](foobar.gif alt=<?php echo htmlentities($userTitle);?) /></pre>
+```php
+<img src=foobar.gif alt=<?php echo htmlentities($userTitle);?> />
+```
 Could easily turn into
-<pre lang="html">![onclick=eval(/* some evil code*/) /](foobar.gif alt= onclick=eval(/* some evil code*/) /)</pre>
+
+```html
+<img src=foobar.gif alt= onclick=eval(/* some evil code*/) />
+```
+
 If you want to remove HTML tags rather than escape them then use `[striptags](http://www.php.net/striptags)`. I prefer to use `htmlspecialchars` because it won't lead to accidentally data loss, and also indicates to users who attempt to use HTML in a legitimate manor that HTML is not accepted.
 
 ## Allowing Some HTML
@@ -65,12 +74,14 @@ At some stage you are going to encounter a situation where you want to allow use
 ## Cross Site Request Forgeries
 
 CSRF is a separate class of attack which is not technically an XSS attack, but is still closely related. In this attack the attacker creates specially crafted POST requests that they execute on the users browser without the user being aware. On third-party-site.com an attacker inserts the following code.
-<pre lang="html">
-<form action="**http://www.your-site.com/account/set_password.php**" method="post" id="evilForm">
+
+```html
+<form action="http://www.your-site.com/account/set_password.php" method="post" id="evilForm">
 	<input type="hidden" name="password" value="newpass" />
 </form>
 <script>document.getElementById('b).submit();</script>
-</pre>
+```
+
 Your site will receive an apparently valid POST request to reset the user's password. Because the request is sent from the victim's browser (without them knowing) it will contain a valid cookie. You need to have some way of filtering out these bogus requests from legitimate ones.
 
 The "[Samy is my Hero](http://namb.la/popular/)" MySpace worm used a MySpace XSS hole and CSRF to spread.

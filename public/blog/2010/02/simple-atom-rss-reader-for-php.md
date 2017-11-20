@@ -12,8 +12,11 @@ I was recently looking for a simple RSS reader for PHP. There are a few out ther
 *   Cache URL contents (default is 60 minutes).
 *   Graceful degradation: fail gracefully on errors (errors result in a 0 item feed which can be iterated through).
 *   Single XML implementation for leaner code (SimpleXML).
+
 Firstly, my usage examples:
-<pre lang="php">$feed = new Feed('http://www.example.com/feed.rss');
+
+```php
+$feed = new Feed('http://www.example.com/feed.rss');
 
 //Get items with next() or current()
 echo $feed->next()->title;           // "Blog post 1"
@@ -42,10 +45,11 @@ echo $feed->random()->title;         // "Blog post 1"
 
 //Total number of items
 echo $feed->count();                 // int(10)
-</pre>
+
+```
 The implementation is below. I failed on the single-class requirement, instead choosing to use the Template design pattern and break the actual XML DOM navigation out into a seperate class for each feed type. This keeps the overall design a lot cleaner.
 
-<div style="height: 40em; overflow: auto;"><pre lang="php">
+```php
 <?php
 /**
  * Simple reader for RSS and Atom feeds. 
@@ -401,8 +405,8 @@ class RSSReader implements FeedReader {
 		return $root->getName() == 'rss';
 	}
 }
-</pre>
-</div>
+```
+
 There are a few things missing, namely any kind of encoding awareness and correct error handling. It also requires SimpleXML and [allow_url_fopen](http://uk2.php.net/manual/en/filesystem.configuration.php#ini.allow-url-fopen) to be enabled. On the plus side the code is simple enough to hack in new features as they are needed.
 
 I'm releasing this code under the [BSD License](http://creativecommons.org/licenses/BSD/), so feel free to take and modify it for any purposes.

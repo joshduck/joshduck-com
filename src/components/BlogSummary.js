@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import dateformat from "dateformat";
-import { markdown } from "markdown";
+import Markdown from "./Markdown";
 import Text from "./Text";
 import "./BlogSummary.css";
 
@@ -22,11 +22,7 @@ export default ({ item }) => {
           </Link>
         </Text>
       </header>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: markdown.toHTML(item.intro)
-        }}
-      />
+      <Markdown content={item.intro} />
       <p>
         <Link to={target}>Read more...</Link>
       </p>

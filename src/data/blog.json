@@ -119,10 +119,10 @@
     "intro": "Over the last week I've been working with a commercial PHP eCommerce package. Amongst some shockingly bad code one of the patterns that has stood out has been the use of includes a kind of pseudo-function. Dozens of files in the application are in the following format."
   },
   {
-    "permalink": "2010/08/14/a-php-snipped-for-pluralizing-strings/",
+    "permalink": "2010/08/14/a-php-snippet-for-pluralizing-strings/",
     "title": "A PHP snippet for pluralizing strings",
     "date": "2010-08-13T14:41:00.000Z",
-    "markdown": "blog/2010/08/a-php-snipped-for-pluralizing-strings.md",
+    "markdown": "blog/2010/08/a-php-snippet-for-pluralizing-strings.md",
     "intro": "Every time I'm working on CRUD applications it seems like a lot of boilerplate code goes towards displaying appropriate messages when lists can contain zero, one or more than one element. I put together a quick function to speed up the process.\n\nThe function takes a string with string fragments marked up inline as its main argument. It then formats the output based on the count passed into the function."
   },
   {
