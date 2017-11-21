@@ -1,0 +1,11 @@
+.Card {
+  margin-bottom: 2rem;
+}
+
+.Card-header h2 {
+  margin-bottom: 0;
+}
+
+.Card-header {
+  margin-bottom: 1rem;
+}

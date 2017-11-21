@@ -1,0 +1,19 @@
+.ActionLink {
+  font-family: "Open Sans Condensed", sans-serif;
+  text-decoration: none !important;
+  background: #45555e;
+  color: #fff !important;
+  font-weight: bold;
+  border: 0;
+  display: inline-block;
+  padding: 0.125em 0.5em;
+}
+
+.ActionLink:hover {
+  color: #fff !important;
+  background: #ff5722 !important;
+}
+
+.ActionLink + .ActionLink {
+  margin-left: 0.25em;
+}

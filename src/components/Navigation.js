@@ -3,9 +3,10 @@ import "./Navigation.css";
 import { NavLink } from "react-router-dom";
 
 const links = {
-  "/resume.html": "Resume",
   "/blog/": "Blog",
-  "/projects.html": "Projects"
+  "/speaking.html": "Speaking",
+  "/projects.html": "Projects",
+  "/resume.html": "Resume"
 };
 
 export default ({ className }) => (
