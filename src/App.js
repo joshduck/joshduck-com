@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import Header from "./components/Header";
-import Resume from "./pages/Resume";
+import Home from "./pages/Home";
 import BlogIndex from "./pages/BlogIndex";
 import BlogPost from "./pages/BlogPost";
 import Projects from "./pages/Projects";
 import Speaking from "./pages/Speaking";
-import Home from "./pages/Home";
+import Resume from "./pages/Resume";
+import NotFound from "./pages/NotFound";
 
 class App extends Component {
   render() {
@@ -17,12 +18,15 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Header />
-            <Route path="/" exact component={Home} />
-            <Route path="/resume.html" component={Resume} />
-            <Route path="/projects.html" component={Projects} />
-            <Route path="/speaking.html" component={Speaking} />
-            <Route path="/blog/" exact component={BlogIndex} />
-            <Route path="/blog/:permalink(.+)" exact component={BlogPost} />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/resume.html" exact component={Resume} />
+              <Route path="/projects.html" exact component={Projects} />
+              <Route path="/speaking.html" exact component={Speaking} />
+              <Route path="/blog/" exact component={BlogIndex} />
+              <Route path="/blog/:permalink(.+)" exact component={BlogPost} />
+              <Route path="*" component={NotFound} />
+            </Switch>
           </div>
         </BrowserRouter>
       </div>

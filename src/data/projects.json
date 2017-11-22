@@ -1,9 +1,9 @@
 [
   {
     "name": "Periodic Table",
-    "subtitle": "A joke that went viral",
+    "subtitle": "A pun that went viral",
     "description":
-      "A periodic table of **HTML5 elements**. This cheesy little joke that went viral and I still stumble across it in the [weirdest places](http://bradfrost.com/blog/post/atomic-web-design/).\n\nIn fact it was so popular that I was [sued for copyright infringement](https://www.techdirt.com/articles/20150423/08252130770/designer-still-pursuing-bogus-takedown-periodic-table-html-elements-has-no-idea-how-copyright-works.shtml). The original is no longer available but can visit [Mike Riethmuller's clone](https://madebymike.com.au/html5-periodic-table/).",
+      "A periodic table of *HTML5* elements. This cheesy little pun that went viral and I still stumble across it in the [weirdest places](http://bradfrost.com/blog/post/atomic-web-design/).\n\nIn fact it was so popular that I was [sued for copyright infringement](https://www.techdirt.com/articles/20150423/08252130770/designer-still-pursuing-bogus-takedown-periodic-table-html-elements-has-no-idea-how-copyright-works.shtml). The original is no longer available but can you visit [Mike Riethmuller's clone](https://madebymike.com.au/html5-periodic-table/) instead.",
     "urls": {
       "https://www.sitepoint.com/the-periodic-table-of-the-html-5-elements/":
         "Read Coverage"
@@ -11,17 +11,20 @@
   },
   {
     "name": "React Bundle Preloading",
-    "subtitle": "An experiment in efficient bundling",
+    "subtitle": "Experiment in faster page loads",
     "description":
       "Webpack dynamic imports allow us to split our application up into smaller chunks, which is a good thing. But because bundles are loaded only when used, we may end up waiting for several round trips as we load JavaScript. This project is a proof of concept that leads to faster page loads.",
     "urls": { "https://github.com/joshduck/webpack-dynamic-import": "GitHub" }
   },
   {
     "name": "PixelStir",
-    "subtitle": "HTML 5 canvas editor",
+    "subtitle": "HTML5 canvas editor",
     "description":
       "Can HTML5 be used to create a Lightroom-like upload experience? PixelStir was a hackathon project that used canvas to provide filtering, cropping, resizing and Facebook upload functionality.",
-    "urls": { "http://www.pixelstir.com/": "PixelStir.com" }
+    "urls": {
+      "http://www.pixelstir.com/": "PixelStir.com",
+      "https://github.com/joshduck/pixelstir": "GitHub"
+    }
   },
   {
     "name": "Injector.js",

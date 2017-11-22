@@ -1,7 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
-const markdown = require("markdown").markdown;
 const dateformat = require("dateformat");
 const parseContent = require("../src/utils/parseContent");
 
