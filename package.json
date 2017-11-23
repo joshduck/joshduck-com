@@ -17,7 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build-content": "node scripts/blog.js > src/data/blog.json",
-    "build": "yarn build-content && react-scripts build && react-snap",
+    "build-snap": "react-snap",
+    "build": "yarn build-content && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

@@ -1,0 +1,170 @@
+[
+  {
+    "permalink": "2008/02/09/rainbow-tables/",
+    "title": "Rainbow Tables",
+    "date": "2008-02-08T16:02:00.000Z",
+    "markdown": "blog/2008/02/rainbow-tables.md",
+    "intro": "To most of you the term &quot;rainbow table&quot; is probably familiar. You are probably aware that they are used to aid the reversing of one-way hashes, usually when trying to crack a password. I personally think that they are a nifty little hack, and so I'd like to explain a little about how they are implemented.\n\n"
+  },
+  {
+    "permalink": "2008/04/12/a-first-look-at-python/",
+    "title": "A First Look at Python",
+    "date": "2008-04-11T15:47:00.000Z",
+    "markdown": "blog/2008/04/a-first-look-at-python.md",
+    "intro": "So I've been looking at and using Python recently. I thought I'd share some of my thoughts for those who haven't had a chance to play with the language yet. I'll try to avoid a preachy OMG-I've-just-discovered-the-best-thing-ever post, or to simply write another Python tutorial. I'll look at the good and bad points of the language.I first looked at Python a month or two ago. The guy and girls over at [programming.reddit.com](http://reddit.com/r/programming) push it as the language to end all languages, so I decided to grab a copy of the (free!) [Dive Into Python](http://www.diveintopython.org/) book. I started putting together a smallish personal project, but with no external pressure it petered out. When a discussion came up at work (a PHP shop) on how to quickly write a reliable server daemon I pushed the idea of Python. It took a little convincing, but the results speak for themselves.\n\n"
+  },
+  {
+    "permalink": "2008/04/06/securing-your-php-code-databases/",
+    "title": "Securing Your PHP Code - Databases",
+    "date": "2008-04-05T16:05:00.000Z",
+    "markdown": "blog/2008/04/securing-your-php-code-databases.md",
+    "intro": "[SQL injection](http://www.unixwiz.net/techtips/sql-injection.html) is a well trodden topic so I won't go into too much detail.\n\nFor those who don't know, the problem occurs when you fail to properly escape variables being placed into your strings. For example the SQL statement `\"SELECT * FROM users WHERE name = '$name'\"` will fail if $name is set to `' or '1' = '1`. The string will be expanded to produce `SELECT * FROM users WHERE name = '' or '1' = '1'`. This is obviously not what you wanted, and could lead to very bad results when coupled with DELETE or UPDATE queries.\n\n"
+  },
+  {
+    "permalink": "2008/04/06/securing-your-php-code-server-security/",
+    "title": "Securing Your PHP Code - Server Security",
+    "date": "2008-04-05T16:04:00.000Z",
+    "markdown": "blog/2008/04/securing-your-php-code-server-security.md",
+    "intro": "When protecting your server environment you'll want to ensure that two things happen. Firstly, you'll want to keep your scripts from prying eyes; you want to make sure that you don't accept input that will break your code. Secondly, and most importantly, you want to stop anyone from executing their own code on your servers.\n\n"
+  },
+  {
+    "permalink": "2008/04/06/securing-your-php-code-xss/",
+    "title": "Securing Your PHP Code - XSS",
+    "date": "2008-04-05T16:03:00.000Z",
+    "markdown": "blog/2008/04/securing-your-php-code-xss.md",
+    "intro": "Today I'm going to start a three part series looking at security issues affecting web developers. The specifics apply to PHP developers, but the general concepts carry across all technologies.\n\nAny significant website is going to consist of three core layers: the client side code (HTML and JavaScript), server code (PHP) and a storage layer (MySQL). As a developer you should be aware of the security implications of each layer of technology and how you can best secure your code.\n\n"
+  },
+  {
+    "permalink": "2008/06/02/twitter-is-crud/",
+    "title": "Twitter is CRUD",
+    "date": "2008-06-02T02:28:00.000Z",
+    "markdown": "blog/2008/06/twitter-is-crud.md",
+    "intro": "Any technical person is interested in solving big challenges. How to scale well (and cheaply) is one of the really big ones; and something that no one really seems to get right. I've read some interesting posts [discussing Twitter's problems](http://venturebeat.com/2008/05/29/twitter-dont-blame-ruby-blame-scoble/) lately (I'm a little slow to jump on this bandwagon, but like that's going to stop me). I haven't been a Twitter-er up until now, but it's hard to miss talk of them in the blogosphere.\n\n"
+  },
+  {
+    "permalink": "2010/01/29/abusing-the-cache-tracking-users-without-cookies/",
+    "title": "Abusing the Cache: Tracking Users without Cookies",
+    "date": "2010-01-29T02:02:00.000Z",
+    "markdown": "blog/2010/01/abusing-the-cache-tracking-users-without-cookies.md",
+    "intro": "I've been doing a little bit of research into ways to misuse browser history and cache and came across a very simple technique for tracking users without the need for cookies. Firstly, a [demo](http://joshduck.com/random/tracker.php). If you watch the HTTP requests you'll see that there are no cookies being used.\n\n"
+  },
+  {
+    "permalink": "2010/01/24/windows-gadgets-and-invalid-packages/",
+    "title": "Windows Gadgets and Invalid Packages",
+    "date": "2010-01-23T23:48:00.000Z",
+    "markdown": "blog/2010/01/windows-gadgets-and-invalid-packages.md",
+    "intro": "I've recently upgraded to Windows 7 and decided to experiment with the in built gadgets. Windows gadgets are built on web technologies; each gadget is really just a couple of HTML pages glued together with JavaScript. This is good in principle but there are enough differences between the gadget environment and Internet Explorer to make testing difficult.\n\n"
+  },
+  {
+    "permalink": "2010/02/27/cleaning-up-antiquated-subversion-working-folders/",
+    "title": "Cleaning up uncommitted subversion working folders",
+    "date": "2010-02-27T02:25:00.000Z",
+    "markdown": "blog/2010/02/cleaning-up-antiquated-subversion-working-folders.md",
+    "intro": "Today I stumbled across an unused working folder in a dark and dusty corner of one of our development servers. The directory had a couple of dozen un-checked in changes. Some were from barely a month ago while others dated back years. Not wanting to discard any important modifirations I cobbled together a bash command to show me when each file was last modified (the file's mtime)."
+  },
+  {
+    "permalink": "2010/02/27/getting-started-with-python-and-django-in-23-frustrating-steps/",
+    "title": "Getting started with Python and Django in 23 frustrating steps",
+    "date": "2010-02-27T04:52:00.000Z",
+    "markdown": "blog/2010/02/getting-started-with-python-and-django-in-23-frustrating-steps.md",
+    "intro": "Should I or shouldn't I? Should I ditch my well-worn PHP and the frameworks I know so well to go with this new-fangled (silent-d)Jango thingy I hear the cool kids talking about? It's a big decision, as this project is going to be the big one (you know, the one that will change the world and all that).\n\nI've worked with PHP for over six years. It has it's warts (and how) but it's very much a known quantity at this point. On the other hand, when I have used Python it's been a much more pleasant experience. The fact that this is a personal project makes the decision easier: let's ditch old mate LAMPhp go with LAMPy. It's almost dinner time and the latter sounds like it'd go well with an ale anyway. So, starting with a brand new dev box, where do I begin?"
+  },
+  {
+    "permalink": "2010/02/08/simple-atom-rss-reader-for-php/",
+    "title": "Simple Atom / RSS Reader for PHP",
+    "date": "2010-02-07T23:13:00.000Z",
+    "markdown": "blog/2010/02/simple-atom-rss-reader-for-php.md",
+    "intro": "I was recently looking for a simple RSS reader for PHP. There are a few out there, like [Magpie RSS](http://magpierss.sourceforge.net/). These seem like adequate projects, but much too high level for the scripts I was throwing together. I need to read a couple of different feed formats: namely Wordpress' RSS feed and Flickr's Atom feeds. I decided to put together a single-class implementation which didn't do anything more than the bare minimum.\n\n"
+  },
+  {
+    "permalink": "2010/03/19/exploring-phps-static-scoping/",
+    "title": "Digging deeper into PHP's static scoping",
+    "date": "2010-03-19T01:51:00.000Z",
+    "markdown": "blog/2010/03/exploring-phps-static-scoping.md",
+    "intro": "Redditor troelskn made an interesting [observation](http://www.reddit.com/r/PHP/comments/bbc81/what_can_singletons_teach_us_about_php/c0lxkn2) about my recent blog post about [Singletons](/blog/2010/03/10/singletons-what-can-they-teach-us-about-php/), pointing out that static variables defined within a method behave completely differently to regular static properties. I use static method variables often but still found this behaviour surprising. I decided this was a good opportunity to find out exactly how static methods, properties and variables work in PHP."
+  },
+  {
+    "permalink": "2010/03/23/fix-your-tables-and-stop-cells-from-expanding/",
+    "title": "Fix your tables: how to stop cells from expanding out of control",
+    "date": "2010-03-23T01:26:00.000Z",
+    "markdown": "blog/2010/03/fix-your-tables-and-stop-cells-from-expanding.md",
+    "intro": "HTML tables receive a bit of a bad rap thanks to years of abuse in web design, however in reality they're semantic as the next element. They do have their quirks though, one common problem is that instead of aligning themselves like the rigid `blocks` we're used to they tend to be a bit more fluid - expanding and contracting to fit their content.\n\nThis useful behaviour can become frustrating when a carefully laid-out table encounters abnormal input and suddenly decides to stop paying attention to the cell widths we've specified. Luckily there is a simple solution to this. All the major browsers implement an alternative `fixed` table layout which is specified through the appropriately named `table-layout` CSS property."
+  },
+  {
+    "permalink": "2010/03/10/singletons-what-can-they-teach-us-about-php/",
+    "title": "Singletons: What can they teach us about PHP?",
+    "date": "2010-03-10T02:54:00.000Z",
+    "markdown": "blog/2010/03/singletons-what-can-they-teach-us-about-php.md",
+    "intro": "Why would I be showing you how implement singletons in PHP? Don't I know that the singleton pattern suffers from [obvious shortcomings](http://blogs.msdn.com/scottdensmore/archive/2004/05/25/140827.aspx)? Of course I do, but I have an ulterior motive. Singletons are a simple way to show off some of the features of PHP you probably don't get to see and use too often. Now we've got that covered let's see some code. If you haven't seen a Singleton before the premise is simple: there should only ever be one instance of our class."
+  },
+  {
+    "permalink": "2010/07/30/an-introduction-to-phps-static-scoping/",
+    "title": "An introduction to PHP's static scoping",
+    "date": "2010-07-29T15:19:00.000Z",
+    "markdown": "blog/2010/07/an-introduction-to-phps-static-scoping.md",
+    "intro": "The static keyword is a core feature of PHP's object oriented programming. Unfortunately, there doesn't seem to be much in the way of easy introductions available online, so I'd like to give a brief overview of how the keyword functions, and how it should be used.\n\nPHP actually has two distinct uses for the static keyword. The first and most common usage is related class method and property scoping, the second to variable scoping within in a single function."
+  },
+  {
+    "permalink": "2010/07/14/dynamically-define-subdomains-with-apache/",
+    "title": "Dynamically define subdomains with Apache",
+    "date": "2010-07-13T15:36:00.000Z",
+    "markdown": "blog/2010/07/dynamically-define-subdomains-with-apache.md",
+    "intro": "When I need to develop multiple sites at once I often find defining multiple Apache Vhosts and host files entries to be time consuming. Thankfully, with a little Apache magic it’s possible to automatically create a new subdomain for each project I start."
+  },
+  {
+    "permalink": "2010/07/29/includes-are-not-functions/",
+    "title": "Includes are not functions",
+    "date": "2010-07-28T15:32:00.000Z",
+    "markdown": "blog/2010/07/includes-are-not-functions.md",
+    "intro": "Over the last week I've been working with a commercial PHP eCommerce package. Amongst some shockingly bad code one of the patterns that has stood out has been the use of includes a kind of pseudo-function. Dozens of files in the application are in the following format."
+  },
+  {
+    "permalink": "2010/08/14/a-php-snippet-for-pluralizing-strings/",
+    "title": "A PHP snippet for pluralizing strings",
+    "date": "2010-08-13T14:41:00.000Z",
+    "markdown": "blog/2010/08/a-php-snippet-for-pluralizing-strings.md",
+    "intro": "Every time I'm working on CRUD applications it seems like a lot of boilerplate code goes towards displaying appropriate messages when lists can contain zero, one or more than one element. I put together a quick function to speed up the process.\n\nThe function takes a string with string fragments marked up inline as its main argument. It then formats the output based on the count passed into the function."
+  },
+  {
+    "permalink": "2010/08/28/twitter-will-eat-your-urls/",
+    "title": "Twitter will eat your URLs",
+    "date": "2010-08-28T08:26:00.000Z",
+    "markdown": "blog/2010/08/twitter-will-eat-your-urls.md",
+    "intro": "My [HTML periodic table ](http://joshduck.com/periodic-table.html) has been getting a lot of attention on Twitter over the last few days. Because the page has a relatively short URL a lot of people have been tweeting the actual URL rather that using a  URL shortening service. This has been good for me because shorteners remove the HTTP referrer and stop me from seeing where my Twitter traffic comes from. \n\nA peek at my error logs did reveal one potential problem though. I've had well over a thousand hits to invalid URLs like [http://joshduck.com/perio](http://joshduck.com/perio). These are obviously URLs which have run up against Twitter's infamous 140 character limit and have been truncated. This results in wasted traffic for me and a waste of time for my visitors so I decided to push a quick fix. "
+  },
+  {
+    "permalink": "2011/01/28/dead-zend-we-cant-be-bothered-is-not-a-valid-excuse/",
+    "title": "Dead Zend: \"We can't be bothered\" is not a valid excuse.",
+    "date": "2011-01-27T16:59:00.000Z",
+    "markdown": "blog/2011/01/dead-zend-we-cant-be-bothered-is-not-a-valid-excuse.md",
+    "intro": "I had a client send me a copy of their website for testing purposes today. Some of it used off-the-shelf commercial PHP components which were encoded with a product called Zend Guard. I'm generally not a fan of encoding files, but headed off to get the relevant extensions from the Zend website. After installing the extension I found Apache throwing a bunch ominous errors when trying to decode a file with the extension"
+  },
+  {
+    "permalink": "2011/01/31/top-trends-of-2011/",
+    "title": "Top trends of 2011",
+    "date": "2011-01-31T13:13:00.000Z",
+    "markdown": "blog/2011/01/top-trends-of-2011.md",
+    "intro": "Brightlabs, my employer, regularly publishes a web-focused newsletter for small businesses called _enlighten_. The latest edition contains and article I wrote detailing \"[Five trends that will change the web in 2011](http://www.brightlabs.com.au/page/Web-Design-Blog/Website_Trends_2011/)\"."
+  },
+  {
+    "permalink": "2011/02/11/inheritance-and-mootools-mixins/",
+    "title": "Inheritance and Mootools Mixins",
+    "date": "2011-02-11T07:26:00.000Z",
+    "markdown": "blog/2011/02/inheritance-and-mootools-mixins.md",
+    "intro": "I was playing with Mootools' Class implementation today. It has a few nice features like mixins, easy inheritance and sane parent method calling. I did run into issues combining mixins (through the _Implements_ keyword) with parent method calling. The following code fails with the message: **The method \"setOptions\" has no parent.**"
+  },
+  {
+    "permalink": "2011/02/18/jumping-on-the-bandwagon/",
+    "title": "Jumping On the Bandwagon",
+    "date": "2011-02-17T15:51:00.000Z",
+    "markdown": "blog/2011/02/jumping-on-the-bandwagon.md",
+    "intro": "Nokia and Microsoft's deal has been getting a lot of press in the last week. [Nokia Plan B](http://nokiaplanb.com/) (which has now been revealed as a hoax) got a lot of attention on Hacker News and spawned a bunch of [knock offs](http://nokiaplans.com/) which I was taking a look through on my morning train ride. By the time I'd got to work I'd decided to contribute my own poor sense of humour to the mix and set off on the quickest web page launch I'd ever done. The result was [Nokia Plan XP](http://nokiaplanxp.com/) which was put together in the time it usually takes me to get my morning coffee."
+  },
+  {
+    "permalink": "2017/02/28/optimising-for-iteration/",
+    "title": "Optimising for Iteration",
+    "date": "2017-02-27T16:54:00.000Z",
+    "markdown": "blog/2017/02/optimising-for-iteration.md",
+    "intro": "![Mark Zuckerberg in front of a Move Fast poster](http://joshduck.com/blog/wp-content/uploads/2017/02/move-fast.jpg)\n\nLate last year I left Facebook, but I still like to follow what's happening inside the company's multicoloured walls. So last week I watched with interest with Mark Zuckerberg laid out a [long-term vision for Facebook](https://www.facebook.com/notes/mark-zuckerberg/building-global-community/10154544292806634?pnref=story) that focused on building meaningful communities and influencing the real world."
+  }
+]
