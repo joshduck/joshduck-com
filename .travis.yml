@@ -22,6 +22,6 @@ deploy:
   skip_cleanup: true
   local_dir: build
   default_text_charset: "utf-8"
-  bucket: "joshduck-com"
+  bucket: "joshduck.com"
   region: "ap-southeast-2"
   local_dir: build
