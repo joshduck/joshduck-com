@@ -6,8 +6,10 @@ import "./Home.css";
 export default () => (
   <Page styled={false}>
     <p className="Home-intro">
-      I work with React, Relay and Node. I'm passionate about making the web
-      fast and building best in class infrastructure.
+      <strong>Hi, I'm Josh</strong>
+      <br />
+      I'm a frontend manager, a coder, and occasional speaker.<br />
+      You'll find me in Brisbane, Australia.<br />
     </p>
     <SocialLinks />
   </Page>
