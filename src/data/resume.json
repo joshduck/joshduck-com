@@ -3,14 +3,14 @@
     {
       "start": "Jan 2017",
       "end": "Present",
-      "role": "Team Lead",
+      "role": "Manager, Web Platform",
       "company": "ABC",
-      "summary":
-        "I lead frontend teams supporting the day-to-day development of abc.net.au, one of Australia’s largest and best regarded news sites, and the development of a modern Node and React stack.",
+      "summary": "I manage frontend teams supporting abc.net.au, and oversaw the to effort to modernise the ABC's frontend stack.",
       "points": [
-        "Tech lead and architect for a greenfield React and Node frontend framework.",
-        "Developed and shipped AMP site using React framework.",
-        "Mentoring, recruiting, and management for a team of frontend developers."
+        "Designed and led implementation of a React framework and continous delivery pipeline for ABC's suite of web products.",
+        "Delivered the implementation of ABC's design language in React.",
+        "Delivered AMP functionality that led to a massive boost to reach, greatly exceeding ABC News' yearly traffic goals.",
+        "Hiring, mentoring, and management for Brisbane development teams."
       ]
     },
     {
@@ -18,22 +18,20 @@
       "end": "Dec 2016",
       "role": "Engineering Manager",
       "company": "Facebook",
-      "summary":
-        "I managed the team that built and open sourced Relay, a JavaScript data framework for web and native apps. I also founded a team to improve JavaScript startup performance on Facebook’s desktop website.",
+      "summary": "I managed and led the GraphQL web client team in developing and open sourcing Relay. The framework now powers Facebook’s websites, Mobile Ads Manager, Groups native app, and Marketplace products. I also founded a team to improve JavaScript startup performance on Facebook’s desktop website.",
       "points": [
-        "Recruited, mentored and conducted performance assessments for reports.",
-        "Developed infrastructure road maps in collaboration with product teams across the company.",
-        "Organized monthly internal tech talks attended by the company’s frontend engineers.",
-        "Represented Facebook at local meetups, Web Directions Code and Yow! conferences.",
-        "Conducted 200+ technical interviews and helped manage the frontend interview processes."
+        "Recruited, mentored and conducted performance assessments.",
+        "Collaborated with product teams to gather requirements and develop infrastructure road maps.",
+        "Conducted over 200 technical interviews and helped refine the frontend interviewing processes.",
+        "Ran regular internal tech talks for frontend engineers.",
+        "Represented Facebook through presentations at meetups, Web Directions Code and Yow! conferences."
       ]
     },
     {
       "start": "May 2011",
       "end": "Aug 2013",
       "role": "UI Engineer",
-      "summary":
-        "I helped develop Timeline in 2011 and Graph Search in 2013. I also worked with Facebook’s product infrastructure team where I contributed to Facebook’s core frontend libraries.",
+      "summary": "As a front engineer I helped build many core elements of Facebook including the primary site navigation, UI for search, user profile navigation, and the rich text input used sitewide for posting and commenting.",
       "points": [
         "Contributed to open source and internal infrastructure including React, Relay, and Draft.js.",
         "Frontend tech lead for the development and launch of Graph Search.",
@@ -45,7 +43,7 @@
       "end": "Apr 2011",
       "role": "Senior Programmer",
       "company": "Brightlabs",
-      "summary": "I built internal and client websites.",
+      "summary": "As a web developer I delivered greenfield internal and client websites.",
       "points": [
         "Developed an in-house billing system with Jira, Plesk and Zendesk integration.",
         "Built a user-facing frontend, billing systems, and administration backend for mobile virtual network."
@@ -54,28 +52,26 @@
     {
       "start": "Jan 2010",
       "end": "Apr 2011",
-      "role": "Senior Programmer",
+      "role": "Web Developer",
       "company": "Various",
-      "summary":
-        "I undertook a number of short contract roles while living in London.",
+      "summary": "I undertook a number of contract roles across London.",
       "points": [
-        "Sole developer for redevelopment of The Beatles’ official website and CMS (Sapient Nitro).",
-        "Maintained Symfony powered sites for Marie Claire, InStyle, Wedding and Look (IPC Media).",
-        "Built a PHP-powered interactive game promoting Warner Bros. film Sherlock Holmes (AKQA).",
-        "Maintained and extended the Symbian Developer site (Symbian Foundation)."
+        "Lead developer for The Beatles’ official website and CMS (Sapient Nitro).",
+        "Maintained Symfony-powered sites for Marie Claire, InStyle, Wedding and Look (IPC Media).",
+        "Built a PHP-powered interactive game promoting the film Sherlock Holmes (AKQA).",
+        "Development of the Symbian Developer site (Symbian Foundation)."
       ]
     },
     {
       "start": "Nov 2006",
       "end": "Dec 2008",
-      "role": "Senior Programmer",
+      "role": "Web Developer",
       "company": "DoubleClick Industries",
-      "summary":
-        "I was the frontend developer for FileFactory, a popular file sharing network.",
+      "summary": "I was the frontend developer for FileFactory, a popular file sharing network.",
       "points": [
-        "Maintained and relaunched site frontend using a new PHP stack.",
+        "Maintained and relaunched site frontend usign PHP.",
         "Developed Facebook application for photo, audio, and file sharing.",
-        "Created .NET application which which was the source of 50% of uploads."
+        "Created .NET upload and download manager which handled 50% of site traffic."
       ]
     },
     {
@@ -83,10 +79,9 @@
       "end": "Oct 2006",
       "role": "Lead Web Developer",
       "company": "Bugal",
-      "summary":
-        "I was responsible to maintaining multiple websites for mobile content brands, and led a team of developers building a new social networking site.",
+      "summary": "I was responsible to maintaining multiple websites for mobile content brands, and led a team of developers building a new social networking site.",
       "points": [
-        "Recruited and led local and remote development teams.",
+        "Recruited and led teams locally and in the Philippines.",
         "Designed custom MVC framework using PHP, MySQL and Memcached.",
         "Integrated third-party avatar chat room, webmail and an IM client.",
         "Launched features including profiles, photo albums, blogging, friend feed, forums, post via SMS, micropayments, ads delivery, Flash games arcade."
@@ -99,8 +94,7 @@
       "role": "Bachelor of Multimedia",
       "start": "2001",
       "end": "2003",
-      "summary":
-        "Bachelor of Multimedia, majoring in Interactive Entertainment and Games Programming.",
+      "summary": "Bachelor of Multimedia, majoring in Interactive Entertainment and Games Programming.",
       "points": [
         "Awarded Multimedia Studies Medal for the highest GPA amongst graduating class.",
         "Recipient of School of Computing and Information Technology Multimedia Award."

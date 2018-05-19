@@ -8,7 +8,7 @@ export default () => (
     <p className="Home-intro">
       <strong>Hi, I'm Josh</strong>
       <br />
-      I'm a frontend manager, a coder, and occasional speaker.<br />
+      I'm an engineering manager, a frontend engineer, and speaker.<br />
       You'll find me in Brisbane, Australia.<br />
     </p>
     <SocialLinks />

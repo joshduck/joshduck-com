@@ -11,14 +11,13 @@ export default () => (
       body={
         <div>
           <p>
-            I’m an <strong>engineering manager</strong> with twelve years of
-            engineering experience building world class web apps. I’m passionate
-            about building products that push the limits of what the web can do.
+            I’m an engineering mananger with twelve years of
+            engineering experience building world class products. I’m passionate
+            about building products that redefine the limits of the web.
           </p>
           <p>
-            I was one of Facebook's first frontend engineers and I've helped
-            build and ship modern, best in class infrastructure like Relay.js
-            and Draft.js.
+            I was one of Facebook's first frontend engineers and have contributed
+            to groundbreaking projects like React, Relay.js and Draft.js.
           </p>
         </div>
       }
