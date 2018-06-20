@@ -9,6 +9,7 @@ import BlogPost from "./pages/BlogPost";
 import Projects from "./pages/Projects";
 import Speaking from "./pages/Speaking";
 import Resume from "./pages/Resume";
+import PeriodicTable from "./pages/PeriodicTable";
 import NotFound from "./pages/NotFound";
 
 class App extends Component {
@@ -21,6 +22,11 @@ class App extends Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/resume.html" exact component={Resume} />
+              <Route
+                path="/periodic-table.html"
+                exact
+                component={PeriodicTable}
+              />
               <Route path="/projects.html" exact component={Projects} />
               <Route path="/speaking.html" exact component={Speaking} />
               <Route path="/blog/" exact component={BlogIndex} />

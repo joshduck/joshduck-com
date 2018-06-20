@@ -1,9 +1,9 @@
 title: Optimising for Iteration
 date: 2017-02-28 02:54
-excerpt: 
+excerpt:
 categories: uncategorized
 
-![Mark Zuckerberg in front of a Move Fast poster](http://joshduck.com/blog/wp-content/uploads/2017/02/move-fast.jpg)
+![Mark Zuckerberg in front of a Move Fast poster](http://joshduck.com/blog/2017/02/move-fast.jpg)
 
 Late last year I left Facebook, but I still like to follow what's happening inside the company's multicoloured walls. So last week I watched with interest with Mark Zuckerberg laid out a [long-term vision for Facebook](https://www.facebook.com/notes/mark-zuckerberg/building-global-community/10154544292806634?pnref=story) that focused on building meaningful communities and influencing the real world.
 

@@ -2,15 +2,17 @@
   {
     "name": "Periodic Table",
     "subtitle": "A pun that went viral",
-    "description": "A periodic table of **HTML5** elements. This pun that went viral and I still stumble across it in the [weirdest places](http://bradfrost.com/blog/post/atomic-web-design/). The original is no longer available ([find out why](https://www.techdirt.com/articles/20150423/08252130770/designer-still-pursuing-bogus-takedown-periodic-table-html-elements-has-no-idea-how-copyright-works.shtml)) but can you visit [Mike Riethmuller's clone](https://madebymike.com.au/html5-periodic-table/) instead.",
+    "description":
+      "A periodic table of **HTML5** elements. This pun that went viral and I still stumble across it in the [weirdest places](http://bradfrost.com/blog/post/atomic-web-design/). The original is no longer available ([find out why](https://www.techdirt.com/articles/20150423/08252130770/designer-still-pursuing-bogus-takedown-periodic-table-html-elements-has-no-idea-how-copyright-works.shtml)) but can you visit [Mike Riethmuller's clone](https://madebymike.com.au/html5-periodic-table/) instead.",
     "urls": {
-      "https://www.sitepoint.com/the-periodic-table-of-the-html-5-elements/": "Read Coverage"
+      "/periodic-table.html": "Periodic Table"
     }
   },
   {
     "name": "React Bundle Preloading",
     "subtitle": "Experiment in faster page loads",
-    "description": "Webpack dynamic imports allow us to split our application up into smaller chunks, which is a good thing. But because bundles are loaded only when used, we may end up waiting for several round trips as we load JavaScript. This project is a proof of concept that leads to faster page loads.",
+    "description":
+      "Webpack dynamic imports allow us to split our application up into smaller chunks, which is a good thing. But because bundles are loaded only when used, we may end up waiting for several round trips as we load JavaScript. This project is a proof of concept that leads to faster page loads.",
     "urls": {
       "https://github.com/joshduck/webpack-dynamic-import": "GitHub"
     }
@@ -18,7 +20,8 @@
   {
     "name": "PixelStir",
     "subtitle": "HTML5 canvas editor",
-    "description": "Can HTML5 be used to create a Lightroom-like upload experience? PixelStir was a hackathon project that used canvas to provide filtering, cropping, resizing and Facebook upload functionality.",
+    "description":
+      "Can HTML5 be used to create a Lightroom-like upload experience? PixelStir was a hackathon project that used canvas to provide filtering, cropping, resizing and Facebook upload functionality.",
     "urls": {
       "http://www.pixelstir.com/": "PixelStir.com",
       "https://github.com/joshduck/pixelstir": "GitHub"
@@ -26,21 +29,24 @@
   },
   {
     "name": "Injector.js",
-    "description": "My first GitHub project. A simple-ish JavaScript class to allow sane handling of document.write",
+    "description":
+      "My first GitHub project. A simple-ish JavaScript class to allow sane handling of document.write",
     "urls": {
       "https://github.com/joshduck/Injector.js": "GitHub"
     }
   },
   {
     "name": "Animal Soundboard",
-    "description": "A a simple children's game built on WinJS. The first React-powered app on the Windows Store",
+    "description":
+      "A a simple children's game built on WinJS. The first React-powered app on the Windows Store",
     "urls": {
       "https://github.com/joshduck/soundboard": "GitHub"
     }
   },
   {
     "name": "Stopwatch Widget",
-    "description": "A simple stopwatch for Windows 7 and Windows Vista built using HTML, JS and CSS.",
+    "description":
+      "A simple stopwatch for Windows 7 and Windows Vista built using HTML, JS and CSS.",
     "urls": {
       "https://github.com/joshduck/stopwatch/": "GitHub"
     }
