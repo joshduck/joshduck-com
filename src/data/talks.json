@@ -1,6 +1,17 @@
 [
   {
     "name":
+      "The First Two Seconds: Faster Page Loads For React",
+    "venue": "ReactConf AU, 2020",
+    "description":
+      "We're often told it's impossible to create React pages that load quickly. At the ABC we knew slow page loads were not an option for news, entertainment and information. This talk charts the ABC's journey and how page load speed is measured, the trade-offs between different app architectures, and finally the APIs and tools browsers give you to speed your sites up.",
+    "urls": {
+      "https://reactconfau.com/people/speakers/josh-duck": "Schedule",
+      "/talks/the-first-two-seconds.pdf": "Slides"
+    }
+  },
+  {
+    "name":
       "Exploring Static Types: Writing Typesafe Code that Feels Like Real JavaScript",
     "venue": "Web Directions Summit, 2017",
     "description":
